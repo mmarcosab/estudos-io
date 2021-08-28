@@ -12,7 +12,7 @@ public class TesteEscrita {
 		//Sobre a saída
 		//OutPutStream   ->   Writer
 
-		//Fluxo de entrada com arquivo
+		//Fluxo de entrada com arquivo usando decorator
 		OutputStream fileOutPutStream = new FileOutputStream("teste-escrita.txt");
 		Writer writer = new OutputStreamWriter(fileOutPutStream);
 		BufferedWriter bufferedWriter = new BufferedWriter(writer);
